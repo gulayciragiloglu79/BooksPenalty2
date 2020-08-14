@@ -25,10 +25,8 @@ namespace PenaltyCalculation.Web.Controllers
         public IActionResult Index()
         {
             setDropDownListForCountry();
-
-            ViewBag.BusinessDays = 0;
-            ViewBag.Penalty = 0;
-            ViewBag.CurrencySymbol = "";
+            
+            ViewBag.ShowResult = false;
 
             return View();
         }
@@ -45,10 +43,13 @@ namespace PenaltyCalculation.Web.Controllers
 
                 var item = _penaltyCalculationProcessor.Process(model);
 
-                ViewBag.BusinessDays = item.BusinessDays;
-                ViewBag.Penalty = item.TotalPrice;
-                ViewBag.CurrencySymbol = item.CurrencySymbol;
-
+                if (item != null)
+                {                   
+                    ViewBag.BusinessDays = item.BusinessDays;
+                    ViewBag.Penalty = item.TotalPrice;
+                    ViewBag.CurrencySymbol = item.CurrencySymbol;
+                    ViewBag.ShowResult = true;
+                }
                 return View(model);
             }
             return View(model);

@@ -34,6 +34,8 @@
 
 </form>
 
+@if (ViewBag.ShowResult)
+{
 <div class="form-group">
     <div class="col-md-offset-2 col-md-5">
         Business Days : <span class="badge alert-success">@ViewBag.BusinessDays</span>
@@ -42,6 +44,7 @@
         Penalty Price : <span class="badge alert-warning">@ViewBag.Penalty  @ViewBag.CurrencySymbol</span>
     </div>
 </div>
+}
 
 
    
