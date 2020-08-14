@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{31639BD5-5A3D-4B9E-A9F0-BB825E0C27D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{42B29369-7520-46B9-B500-37B58DFC4E8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PenaltyCalculation.Web", "PenaltyCalculation.Web\PenaltyCalculation.Web.csproj", "{EB37C491-A52B-4E9A-94F0-381ABFC60B47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Extensions.DependencyInjection.Named", "Microsoft.Extensions.DependencyInjection.Named\Microsoft.Extensions.DependencyInjection.Named.csproj", "{E2A136D6-F11D-499B-9253-FB762A475A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenaltyCalculation.Web.Tests", "PenaltyCalculation.Web.Tests\PenaltyCalculation.Web.Tests.csproj", "{814695B5-CE5A-482F-B374-036C132FFD50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB37C491-A52B-4E9A-94F0-381ABFC60B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB37C491-A52B-4E9A-94F0-381ABFC60B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB37C491-A52B-4E9A-94F0-381ABFC60B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB37C491-A52B-4E9A-94F0-381ABFC60B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A136D6-F11D-499B-9253-FB762A475A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A136D6-F11D-499B-9253-FB762A475A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A136D6-F11D-499B-9253-FB762A475A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A136D6-F11D-499B-9253-FB762A475A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814695B5-CE5A-482F-B374-036C132FFD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814695B5-CE5A-482F-B374-036C132FFD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814695B5-CE5A-482F-B374-036C132FFD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814695B5-CE5A-482F-B374-036C132FFD50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB37C491-A52B-4E9A-94F0-381ABFC60B47} = {31639BD5-5A3D-4B9E-A9F0-BB825E0C27D7}
+		{E2A136D6-F11D-499B-9253-FB762A475A5C} = {31639BD5-5A3D-4B9E-A9F0-BB825E0C27D7}
+		{814695B5-CE5A-482F-B374-036C132FFD50} = {42B29369-7520-46B9-B500-37B58DFC4E8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEEEAC35-3CE9-4979-9F00-FAC25D883C2F}
+	EndGlobalSection
+EndGlobal
