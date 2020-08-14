@@ -36,16 +36,16 @@
 
 @if (ViewBag.ShowResult)
 {
-<div class="form-group">
-    <div class="col-md-offset-2 col-md-5">
-        Business Days : <span class="badge alert-success">@ViewBag.BusinessDays</span>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="alert alert-info" role="alert">
+                <p>Business Days : <span class="badge alert-success">@ViewBag.BusinessDays</span></p>
+                <p>Penalty Price : <span class="badge alert-warning">@ViewBag.Penalty  @ViewBag.CurrencySymbol</span></p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-offset-2 col-md-5">
-        Penalty Price : <span class="badge alert-warning">@ViewBag.Penalty  @ViewBag.CurrencySymbol</span>
-    </div>
-</div>
 }
 
 
-   
-    
+
+
